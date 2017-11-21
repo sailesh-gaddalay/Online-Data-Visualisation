@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    
+    <head>
+        
+        <title>Plot</title>
+        
+        <style>
+            
+        .vl {
+            border-left: 6px solid green;
+            height: 100%;
+            position: absolute;
+            margin-left: 30%;
+            top: 0;
+        }
+        
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+    
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        
+        .button {
+            background-color: #4CAF50;
+            border-radius: 12px;
+            color: black;
+            padding: 25px 32px;
+            text-align: center;
+            display: inline-block;
+            font-size: 16px;
+            width: 250px;
+            transition-duration: 0.4s;
+            cursor: pointer;
+        }
+        
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            width: 250px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        
+        a:hover {
+            background-color: #e6e6e6;
+        }
+        
+        .button1 {
+            background-color: white;
+            color: black;
+            border: 2px solid #4CAF50;
+        }
+        
+        .button2 {
+            background-color: white;
+            color: black;
+            border: 2px solid #008CBA;
+        }
+        
+        .button3 {
+            background-color: white;
+            color: black;
+            border: 2px solid #ff9900;
+        }
+        
+        .button3:hover {
+            background-color: #ff9900;
+            color: white;
+            border-radius: 25px;
+        }
+        
+        .b1 {
+            margin-top:5%;
+            margin-left:7.25%;
+            position: absolute;
+        }
+        
+        .b2 {
+            margin-top:25%;
+            margin-left:7.25%;
+            position: absolute;
+        }
+        
+        .b3 {
+            margin-top:45%;
+            margin-left:7.25%;
+            position: absolute;
+        }
+        
+        </style>
+        
+    </head>
+    
+    <body>
+        
+        <div class="vl"></div>
+        
+        <div class="b1">
+        <div class="dropdown">
+            
+            <button id="btn1" class="button button1">Upload Data</button>
+            
+            <div class="dropdown-content">
+                <a href="#">Browse files</a>
+                <a href="#">Provide Link</a>
+            </div>
+            
+        </div>
+        </div>
+        
+        <div class="b2">
+        <div class="dropdown" style="margin-left:5%;">
+            
+            <button id="btn2" class="button button2">Choose Action</button>
+            
+            <div class="dropdown-content">
+                <a href="#" onclick="document.getElementById('btn2').innerHTML='Pie Chart'">Pie Chart</a>
+                <a href="#" onclick="document.getElementById('btn2').innerHTML='Histogram'">Histogram</a>
+                <a href="#" onclick="document.getElementById('btn2').innerHTML='Bar Chart'">Bar Chart</a>
+                <a href="#" onclick="document.getElementById('btn2').innerHTML='Line Chart'">Line Chart</a>
+                <a href="#" onclick="document.getElementById('btn2').innerHTML='Scatter Plot'">Scatter Plot</a>
+                <a href="#" onclick="document.getElementById('btn2').innerHTML='Box Plot'">Box Plot</a>
+            </div>
+            
+        </div>
+        </div>
+        
+        <div class="b3">
+        <button class="button button3">Plot &nbsp;&nbsp;>></button>
+        </div>
+        
+    </body>
+    
+</html>
